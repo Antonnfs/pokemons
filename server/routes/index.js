@@ -1,10 +1,10 @@
 import { Router } from "express";
-import pokemonModel from "../model/Pokemon.js";
+import { getPaginatedData } from "../utils/index.js";
 
 const router = Router();
 
 export const getPokemons = async (req, res) => {
-   const result = await pokemonModel.find({});
+   const result = await getPaginatedData(req);
    res.json(result);
 };
 
