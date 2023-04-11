@@ -4,7 +4,7 @@ export const getPaginatedData = async (req, sourceData = []) => {
    const path = req.path;
    let Model;
    if (path === "/pokemons") Model = pokemonModel;
-   const limit = parseInt(req.query?.limit) || 12;
+   const limit = parseInt(req.query?.limit) || 8;
    let page = parseInt(req.query.page) || 1;
    try {
       const count = await Model.countDocuments();

@@ -1,0 +1,35 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #EBA000;
+	width: 1270px;
+	height: 80px;
+	padding: 12px 16px;
+	gap: 10px;
+	border-radius: 16px;
+	&__logo {
+		width: 154px;
+		height: 56px;
+	}
+	&__img {
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding: 4px;
+		border: 1px solid #0B213F;
+		border-radius: 16px;
+	}
+	&__button {
+		border-radius: 12px;
+		padding: 12px 24px;
+		font-size: 16px;
+		line-height: 24px;
+		&_active {
+			color: #fff;
+			background: #0B213F;
+		}
+	}
+}
